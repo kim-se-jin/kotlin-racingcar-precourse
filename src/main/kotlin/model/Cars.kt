@@ -6,8 +6,7 @@ class Cars(names: String) {
 
     fun move() {
         cars.forEach { car ->
-            val canMove = (0..9).random() >= 4
-            car.move(canMove)
+            car.move()  // 각 자동차가 전진 여부를 결정
         }
     }
 
