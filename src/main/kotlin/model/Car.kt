@@ -1,5 +1,7 @@
 package racingcar.model
 
+import racingcar.utils.RandomNumberGenerator
+
 class Car(val name: String) {
    init {
         require(isValidName(name)) {

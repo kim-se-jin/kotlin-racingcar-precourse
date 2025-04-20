@@ -1,8 +1,7 @@
 package racingcar.model
 
-class Cars(names: String) {
-    private val cars: List<Car> = names.split(",")
-        .map { name -> Car(name) }
+class Cars(cars: List<Car>) {
+    private val cars: List<Car> = cars
 
     fun move() {
         cars.forEach { car ->
